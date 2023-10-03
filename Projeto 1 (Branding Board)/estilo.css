@@ -1,0 +1,136 @@
+/*DOCUMENTO CSS*/
+/* RESET CSS*/
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	/* border: 2px red solid; */
+}
+body {
+	font-family: 'Codec Pro', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+	height: 200px;
+	background-color:#246C9F;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+nav {
+	height: 50px;
+	background-color: #DD858C;
+	width: 85pxs;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	padding: 15px 50px;
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.4s;
+}
+nav ul li a:hover {
+	background-color:#EEE8DA;
+	color: #DD858C;
+}
+main {
+	height: 800px;
+	width: 100%;
+	margin: auto;
+	background-color: #029daf;
+}
+footer {
+	height: 100px;
+	background-color:#f07c19;
+}
+#parte1 {
+	background-color:#f07c19;
+	display: flex;
+	justify-content: center;
+
+}
+.esquerdo {
+	width: 60%;
+	padding: 10px 30px 10px 100px;
+	background-color: #EFAEB3;
+	color: #246C9F;
+}
+
+.direito {
+	width: 40%;
+	background-color: #fff;
+	padding: 10px 30px;
+	display: flex;
+}
+
+#img1 {
+	margin-left: 10%;
+}
+
+.letra1 {
+	margin-left: auto;
+	color: #246C9F
+}
+
+#parte2 {
+	justify-content: center;
+	display: flex;
+	background-color: #EEE8DA;
+}
+
+#parte3 {
+	background-color: #6394B6;
+	display: flex;
+	justify-content: center;
+	color: #fff
+}
+
+.logo {
+	width: 50%;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.fonte {
+	width: 50%;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.linha {
+	height: 200px;
+	border: 2px solid #EEE8DA;
+	margin-top: 30px;
+}
+.fonte1 {
+	margin-left: 600px;
+	
+}
+#footer {
+	background-color: #fff;
+}
+.imagem {
+	display: flex;
+	justify-content: center;
+}
+.images {
+	justify-content: center;
+	display: flex;
+	background-color: #EEE8DA;
+	border: 5px solid #EEE8DA;
+}
+.linha1 {
+	height: 200px;
+	border: 3px solid #EEE8DA;
+	margin-top: 30px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TRANSPORTE DE COLABORADORES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="box">
+        <p>TRANSPORTE DE COLABORADORES</p>
+        <br>
+        <label for="n1">Informar a quantidade de funcionários que necessitarão de transporte fretado:</label>
+        <input type="number" name="n1" id="n1">
+        <br>
+        <label for="n2">Informe a quantidade de dias úteis em que o transporte deverá acontecer:</label>
+        <input type="number" name="n2" id="n2">
+        <br>
+        <button onclick="resp()">Calcular</button>
+        <br>
+
+        <p id="res">Aqui vai o resultado...</p>
+        <button onclick="mostrarResultados()">Resultados guardados</button>
+        <button class="back-button" onclick="window.location.href='../todos.html'">Voltar para o início</button>
+    </div>
+    <script src="transporte.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CÁLCULO DE HORAS EXTRAS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="box">
+        <p>CÁLCULO DE HORAS EXTRAS</p>
+        <br>
+        <label for="n1">Valor do salário mensal bruto:</label>
+        <input type="number" name="n1" id="n1">
+        <br>
+        <label for="n2">Quantidade de horas extras em dias normais (úteis):</label>
+        <input type="number" name="n2" id="n2">
+        <br>
+        <label for="res">Quantidade de horas extras realizadas aos finais de semana:</label>
+        <input type="number" name="n3" id="n3">
+        <br>
+        <button onclick="resp()">Calcular</button>
+        <br>
+
+        <p id="res">Aqui vai o resultado...</p>
+        <button onclick="mostrarResultados()">Resultados guardados</button>
+        <button class="back-button" onclick="window.location.href='../todos.html'">Voltar para o início</button>
+    </div>
+    <script src="horaextra.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+/*DOCUMENT*/
+@font-face {
+    font-family: 'Wedges';
+    src: url('Wedges.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+body{
+    background-color: #0B3C5D;
+    color: white;
+    font-family: 'Wedges';
+    text-align: center;
+}
+
+.box{
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    border: 2px white solid;
+    background-color: #cdf3dd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #cdf3dd;
+    text-align: center;
+}
+input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+#res{
+    font-size:larger;
+    color: white;
+    text-align: center;
+}
+/* Estilo do botão */
+button {
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px 4px;
+    background-color: white;
+    color: #0B3C5D;
+    font-weight: bold; /* Adicionado negrito */
+    cursor: pointer; /* Alterado o cursor para parecer mais clicável */
+}
+
+/* Estilo do botão quando passa o mouse por cima */
+button:hover {
+    background-color: #0B3C5D;
+    color: white;
+}

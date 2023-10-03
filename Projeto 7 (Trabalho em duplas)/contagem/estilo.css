@@ -1,0 +1,61 @@
+/* Estilo do corpo */
+@font-face {
+    font-family: 'codec-pro.regular';
+    src: url('codec-pro.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    color: white; /* Corrigido para uma cor de texto visível */
+    font-family: 'codec-pro.regular';
+    text-align: center;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo da caixa */
+/* Estilo da caixa */
+.box2 {
+    width: 40%;
+    height: 80%;
+    margin: auto; /* Margens automáticas para centralizar horizontalmente */
+    border: 3px #F2CA74 solid;
+    background-color: #50CC86;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #F2CA74;
+    text-align: center;
+    
+    /* Centralize verticalmente usando flexbox */
+    display: flex;
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}
+
+
+/* Estilo do botão */
+button {
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px 4px;
+    background-color: white;
+    color: #F2CA74;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #F2CA74;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do botão quando passa o mouse por cima */
+button:hover {
+    background-color: #F2CA74;
+    color: white;
+    box-shadow: 2px 2px 2px white;
+    border: 1px solid white;
+    transform: scale(1.1);
+}

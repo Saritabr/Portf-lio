@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Geek</title>
+    <style>
+        body{ font:12pt Arial;}
+        button{font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Loja Geek</h1>
+    <button onclick="clicou()">Calculando o troco</button>
+    <script>
+        function clicou(){
+            var produto = prompt("Qual produto deseja comprar?");
+            var valorproduto = Number(prompt("Quanto custa o produto?"));
+            var valorpago = Number(prompt("Quanto você irá pagar nesse produto?"));
+            // Realizando as operações matemáticas
+            if (valorpago >= valorproduto) {
+                var troco = valorpago - valorproduto
+                window.alert("Seu troco: " +troco)
+            }
+            else {
+                window.alert("Esse valor não é suficiente para o produto!")
+            }
+        }
+    </script>    
+</body>
+</html>

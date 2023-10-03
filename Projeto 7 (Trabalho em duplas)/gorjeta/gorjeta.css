@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+}
+
+/* Estilo do corpo */
+@font-face {
+    font-family: 'IntroRust-Base';
+    src: url('IntroRust-Base.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: 'IntroRust-Base.otf';
+    background-color: #302618;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: azure;
+    margin: 40px;
+    width: 40%;
+    height: 80%;
+
+ 
+}
+p{
+    font-size: larger;
+}
+body{
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+
+}
+#resultado{
+    font-size: 25px;
+    background-color: rgb(15, 14, 12);
+    margin: 20px;
+ 
+}
+ 
+label{
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 30px;
+   
+}
+input {
+    margin: 5px;
+    width: 20px;
+}
+#gorjeta{
+    margin: 5px;
+    width: 300px;
+}
+
+/* Estilo do botão */
+button {
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px 4px;
+    background-color: white;
+    color: #302618;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #302618;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do botão quando passa o mouse por cima */
+button:hover {
+    background-color: #403423;
+    color: white;
+    box-shadow: 2px 2px 2px white;
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+.container{
+    width: 40%;
+    height: 80%;
+    margin: auto; /* Margens automáticas para centralizar horizontalmente */
+    border: 3px white solid;
+    background-color: #302618;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px white;
+    text-align: center;
+    
+    /* Centralize verticalmente usando flexbox */
+    display: flex;
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gorjeta.css">
+    <title>Gorjeta</title>
+</head>
+<body>
+    <h1>    NASU    </h1>
+    <div class="container">
+        <label for="gorjeta"> Por Favor, insira o valor gasto! </label>
+        <input type="number" id="gorjeta" placeholder=" Digite o valor ">
+       
+        <h2>Avaliação do nosso serviço</h2>
+        <p>Bom<input type="radio" name="avaliacao" id="bom"></p>
+        <p>Regular<input type="radio" name="avaliacao" id="regular"></p>
+        <p>Ruim<input type="radio" name="avaliacao" id="ruim"></p>
+        <!-- <button onclick="Bom()">Bom</button>
+        <button onclick="Regular()">Regular</button>
+        <button onclick="Ruim()">Ruim</button> -->
+        <button onclick="CalcularGorjeta()">Calcular</button>
+
+        <div id="resultado"></div>
+        <script src="gorjeta.js"></script>
+
+    </div>
+   
+</body>
+</html>

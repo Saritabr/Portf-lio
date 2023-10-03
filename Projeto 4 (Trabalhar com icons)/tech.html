@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu que muda ícone</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'intro-rust.rar', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: #797979;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        header .logo img{
+            margin-right: 3em;
+        }
+        header nav li{
+            display: inline;
+            margin-right: 3em;
+        }
+        header nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        header h1 {
+            color: #aae13b;
+        }
+        main{
+            background-color:;
+        }
+    </style>
+    <script>
+        function mudaFoto(tipo){
+            if(tipo==1){
+                    document.getElementById("icone").src="casa.png"
+            }else if(tipo==2){
+                    document.getElementById("icone").src="tela-de-computador.png"
+            }else if(tipo==3){
+                    document.getElementById("icone").src="controle-de-video-game.png"
+            }else if(tipo==4){
+                document.getElementById("icone").src="cell.png"
+            }else if(tipo==5){
+                document.getElementById("icone").src="contato.png"
+            }else{
+                document.getElementById("icone").src="grupo.png"
+            }
+
+        
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" id="icone">
+            <h1>Tech Master</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onmousemove="mudaFoto(1)" onmouseout="mudaFoto(5)">Principal</a></li>
+                <li><a href="#" onmousemove="mudaFoto(2)" onmouseout="mudaFoto(5)">Computadores</a></li>
+                <li><a href="#" onmousemove="mudaFoto(3)" onmouseout="mudaFoto(5)">Video games</a></li>
+                <li><a href="#" onmousemove="mudaFoto(4)" onmouseout="mudaFoto(5)">Celulares</a></li>
+                <li><a href="#" onmousemove="mudaFoto(4)" onmouseout="mudaFoto(5)">Contato</a></li>
+                <li><a href="#" onmousemove="mudaFoto(4)" onmouseout="mudaFoto(5)">Quem somos</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+<main>
+</main>
+</html>

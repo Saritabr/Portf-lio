@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Extras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Horas Extras</h1>
+        <form id="calculator-form">
+            <label for="salarioBruto">Salário Bruto Mensal (R$):</label>
+            <input type="number" id="salarioBruto" required><br><br>
+            
+            <label for="horasExtrasNormais">Horas Extras em Dias Normais:</label>
+            <input type="number" id="horasExtrasNormais" required><br><br>
+            
+            <label for="horasExtrasFinaisDeSemana">Horas Extras aos Finais de Semana:</label>
+            <input type="number" id="horasExtrasFinaisDeSemana" required><br><br>
+            
+            <button type="button" onclick="calcularHorasExtras()">Calcular</button>
+        </form>
+        
+        <h2>Resultado</h2>
+        <p>O valor a receber pelas horas extras é: <span id="resultado"></span> R$</p>
+    </div>
+
+    <script>
+        function calcularHorasExtras() {
+            const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
+            const horasExtrasNormais = parseFloat(document.getElementById('horasExtrasNormais').value);
+            const horasExtrasFinaisDeSemana = parseFloat(document.getElementById('horasExtrasFinaisDeSemana').value);
+
+            const valorHoraTrabalhada = salarioBruto / 200;
+            const valorHorasExtrasNormais = valorHoraTrabalhada * horasExtrasNormais;
+            const valorHorasExtrasFinaisDeSemana = valorHoraTrabalhada * horasExtrasFinaisDeSemana * 1.5;
+
+            const valorTotalHorasExtras = valorHorasExtrasNormais + valorHorasExtrasFinaisDeSemana;
+
+            document.getElementById('resultado').textContent = valorTotalHorasExtras.toFixed(2);
+        }
+    </script>
+</body>
+</html>

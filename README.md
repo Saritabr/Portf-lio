@@ -14,4 +14,3 @@ Web Front-End no Sesi Senai Itapeva.
 ## Autor
 - Sara Barros Resende
 - Contato: sarabarrosresende@gmail.com
-- -
